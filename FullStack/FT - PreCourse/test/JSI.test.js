@@ -6,36 +6,24 @@ const {
    nuevaResta,
    nuevaMultiplicacion,
    nuevoModulo,
-} = require('../Ejercicio 01');
-
-const {
    devolverString,
    suma,
    resta,
    divide,
    multiplica,
    obtenerResto,
-} = require('../Ejercicio 02');
-
-const {
    tienenMismaLongitud,
    sonIguales,
    menosQueNoventa,
    mayorQueCincuenta,
    esPar,
    esImpar,
-} = require('../Ejercicio 03');
-
-const {
    elevarAlCuadrado,
    elevarAlCubo,
    elevar,
    redondearNumero,
    redondearHaciaArriba,
    numeroRandom,
-} = require('../Ejercicio 04');
-
-const {
    esPositivo,
    agregarSimboloExclamacion,
    combinarNombres,
@@ -45,10 +33,10 @@ const {
    areaDelTriangulo,
    deEuroAdolar,
    esVocal,
-} = require('../Ejercicio 05');
+} = require('../Fundamentos.js');
 
-describe('JAVASCRIPT I', function () {
-   describe('EJERCICIO 01', function () {
+describe('FUNDAMENTOS', function () {
+   
       describe('nuevoString', function () {
          it('Debe ser un string', function () {
             expect(typeof nuevoString).toBe('string');
@@ -84,9 +72,6 @@ describe('JAVASCRIPT I', function () {
             expect(nuevoModulo).toBe(true);
          });
       });
-   });
-
-   describe('EJERCICIO 02', function () {
       describe('devolverString(str)', function () {
          it('Debe retornar el string provisto', function () {
             expect(devolverString('Henry')).toBe('Henry');
@@ -132,9 +117,6 @@ describe('JAVASCRIPT I', function () {
             expect(obtenerResto(22, 5)).toBe(2);
          });
       });
-   });
-
-   describe('EJERCICIO 03', function () {
       describe('sonIguales(x, y)', function () {
          it('Debe devolver True si los argumentos son iguales', function () {
             expect(sonIguales(15, 15)).toBe(true);
@@ -199,9 +181,6 @@ describe('JAVASCRIPT I', function () {
             expect(esImpar(0)).toBe(false);
          });
       });
-   });
-
-   describe('EJERCICIO 04', function () {
       describe('elevarAlCuadrado(num)', function () {
          it('Debe devolver el número elevado al cuadrado', function () {
             expect(elevarAlCuadrado(6)).toBe(36);
@@ -254,9 +233,6 @@ describe('JAVASCRIPT I', function () {
             expect(numeroRandom()).not.toBe(numeroRandom());
          });
       });
-   });
-
-   describe('EJERCICIO 05', function () {
       describe('esPositivo(num)', function () {
          it('Debe devolver el string "Es positivo" si el número es mayor a cero', function () {
             expect(esPositivo(23)).toBe('Es positivo');
@@ -342,4 +318,3 @@ describe('JAVASCRIPT I', function () {
          });
       });
    });
-});
