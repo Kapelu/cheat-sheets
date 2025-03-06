@@ -1,0 +1,8 @@
+/*⚠️ NO MODIFIQUES EL NOMBRE DE LAS DECLARACIONES ⚠️*/
+
+
+
+/*⚠️ NO MODIFIQUES NADA DEBAJO DE ESTO ⚠️*/
+module.exports = {
+   
+};
