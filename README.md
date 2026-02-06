@@ -14,7 +14,9 @@ Para lograr un aprendizaje significativo es necesario que el estudiante `aprenda
 </p>
 <br>  
 <br> 
-<img src="./frasePele.jpg"/>
+
+![Frase de Pelé](https://raw.githubusercontent.com/Kapelu/Kapelu/main/public/frasePele.jpg)
+
 <br> 
 <br> 
 <br> 
