@@ -1,45 +1,77 @@
-# cheatsheets git
+<h1 align="center">cheatsheets git</h1>
 
 
+
+#### Inicia git en el directorio actual           
 ```bash
-# inicia git en el directorio actual           
 git init   
+```
 
-# agrega un repositorio remoto
+#### agrega un repositorio remoto
+```bash
 git remote add origin https://github.com/repo_name.git        
+```
 
-# crea un repositorio git desde la dirección dada (obtené la dirección desde tu servidor git)
+#### crea un repositorio git desde la dirección dada (obtené la dirección desde tu servidor git)
+```bash
 git clone <address> 
+```
 
-# clona un repo git en el directorio indicado y hace checkout de la rama dada
-git clone <address> -b <branch_name> <path/to/directory>  
-# clona una sola rama
+#### clona un repo git en el directorio indicado y hace checkout de la rama dada
+```bash
+git clone <address> -b <branch_name> <path/to/directory>
+```
+
+#### clona una sola rama
+```bash
 git clone <address> -b <branch_name> --single-branch  
-
-# agrega (stagea) file.txt a git
+```
+#### agrega (stagea) file.txt a git
+```bash
 git add <file_name>   
-
-# agrega (stagea) todas las nuevas modificaciones, eliminaciones y creaciones
+```
+#### agrega (stagea) todas las nuevas modificaciones, eliminaciones y creaciones
+```bash
 git add *             
-
-# quita file.txt del stage
+```
+#### quita file.txt del stage
+```bash
 git reset file.txt    
+```
 
-git reset --hard      # descarta todos los cambios no confirmados, resetea los archivos al HEAD
-git reset --soft <commit_id> # mueve el puntero HEAD
-git reset --mixed <commit_id> # mueve el puntero HEAD y copia los archivos del commit actual al área de staging,
-# es el comportamiento por defecto cuando no se pasa ningún argumento
-git reset -hard <commit_id> # mueve el puntero HEAD y copia los archivos del commit al área de staging
-# y al directorio de trabajo, descartando todos los cambios no confirmados
+#### descarta todos los cambios no confirmados, resetea los archivos al HEAD
+```bash
+git reset --hard      
+```
 
-# git reset
-# 1. Mueve HEAD y la rama actual
-# 2. Resetea el área de staging
-# 3. Resetea el directorio de trabajo
+#### mueve el puntero HEAD
+```bash
+git reset --soft <commit_id> 
+```
 
-# --soft = (1)
-# --mixed = (1) & (2) (por defecto)
-# --hard = (1) & (2) & (3)
+#### mueve el puntero HEAD y copia los archivos del commit actual al área de staging,
+```bash
+git reset --mixed <commit_id>   # es el comportamiento por defecto cuando no se pasa ningún argumento
+```
+
+#### mueve el puntero HEAD y copia los archivos del commit al área de staging y al directorio de trabajo, descartando todos los cambios no confirmados
+```bash
+git reset -hard <commit_id> 
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 git rm file.txt          # elimina file.txt tanto de git como del sistema de archivos
 git rm --cached file.txt # elimina file.txt solo del índice de git
